@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747232349619,
+  "lastUpdate": 1747232835400,
   "repoUrl": "https://github.com/steelannelida/benchmarktest",
   "entries": {
     "Benchmark": [
@@ -58,6 +58,35 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000009718971919110581",
             "extra": "mean: 100.15579379999906 msec\nrounds: 10"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "steelannelida@Dmitrys-MacBook-Pro.local",
+            "name": "Dmitry Chernenkov"
+          },
+          "committer": {
+            "email": "steelannelida@Dmitrys-MacBook-Pro.local",
+            "name": "Dmitry Chernenkov"
+          },
+          "distinct": true,
+          "id": "b722d2c48463020c6612a2c5b3fc208a1c4dd49d",
+          "message": "update readme",
+          "timestamp": "2025-05-14T16:26:51+02:00",
+          "tree_id": "cc001e150be901ac32d3f71291bf45b56ced40cd",
+          "url": "https://github.com/steelannelida/benchmarktest/commit/b722d2c48463020c6612a2c5b3fc208a1c4dd49d"
+        },
+        "date": 1747232834500,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "test_all.py::test_my_case",
+            "value": 9.984890494262732,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008993626710188831",
+            "extra": "mean: 100.15132370000401 msec\nrounds: 10"
           }
         ]
       }
