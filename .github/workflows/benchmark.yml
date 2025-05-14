@@ -1,0 +1,22 @@
+# This workflow will install Python dependencies, run tests
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Benchmark
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bench-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3.9    
+    - name: Benchmark
+      run: |
+        pip install pytest pytest-benchmark
+        python -m pytest test_all.py --benchmark-json output.json
