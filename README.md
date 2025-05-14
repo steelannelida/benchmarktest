@@ -1,3 +1,5 @@
 # benchmarktest
 Try out github actions
-pip install pytest pytest-benchmark
+
+
+https://steelannelida.github.io/benchmarktest/dev/bench/
