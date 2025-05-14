@@ -27,4 +27,4 @@ jobs:
           tool: 'pytest'
           output-file-path: output.json
     - name: Push benchmark result
-      run: git push 'https://you:${{ secrets.GITHUB_TOKEN }}@github.com/you/repo-name.git' gh-pages:gh-pages
+      run: git push 'https://steelannelida:${{ secrets.GITHUB_TOKEN }}@github.com/steelannelida/benchmarktest.git' gh-pages:gh-pages
