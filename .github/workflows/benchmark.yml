@@ -20,3 +20,8 @@ jobs:
       run: |
         pip install pytest pytest-benchmark
         python -m pytest test_all.py --benchmark-json output.json
+    - name: Store benchmark result
+      uses: benchmark-action/github-action-benchmark@v1
+      with:
+          tool: 'pytest'
+          output-file-path: output.json
